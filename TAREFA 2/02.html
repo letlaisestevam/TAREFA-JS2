@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAREFA 2</title>
+</head>
+<body>
+    <script>
+
+        let num1 = (prompt("Declare o primeiro número:"))
+       let acao = (prompt("Escreva por extenso a operação da soma ou subtração: "))
+       let num2 = (prompt("Declare o segundo número: "))
+
+        function tentativa(num1, num2, acao){
+            if(acao == 'soma'){
+                return num1 + num2
+            }else if(acao == 'subtração'){
+                return num1 - num2
+            }
+        }
+        document.write(tentativa(num1, num2, acao))
+    </script>
+    <!-- Eu expus três variáveis para o user inserir o primeiro número, operação por extenso e o segundo número, declarei a tentativa para que caso o user digite a alternativa "soma", o código irá retornar a soma do primeiro número e do segundo, caso ele digite a alternativa "subtração", o código irá devolver a subtração do primeiro e segundo número. -->
+</body>
+</html>
